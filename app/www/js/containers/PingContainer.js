@@ -53,7 +53,7 @@ class PingContainer extends Component {
         <RaisedButton
       label={'Create Data Point'}
       primary={true}
-      style={{float: 'right'}}  onClick={() => {
+        style={{float: 'right'}}  onClick={() => {
           spiralActions.add_ping_data(this.state.selected.toList().toJS());
           routeActions.setRoute(HomeContainer);
         }} />
